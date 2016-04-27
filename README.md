@@ -4,7 +4,7 @@ ApplicationLocker
 
 Android library that let you easily set lock activity for you application .
 
-[![ScreenShot](https://raw.githubusercontent.com/soroushjavdan/ApplicationLocker/master/sample.gif)]
+![ScreenShot](https://raw.githubusercontent.com/soroushjavdan/ApplicationLocker/master/sample.gif)
 
 
 Description
