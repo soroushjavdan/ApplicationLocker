@@ -10,7 +10,7 @@ Android library that let you easily set lock activity for you application .
 Description
 ----------
 
-This library send your user to lock activity after they clicking on recent or home button or killing you application.
+This library send your user to lock activity after they leave your app and return to it . even if they click on home or recent button .
 
 How to:
 -------
