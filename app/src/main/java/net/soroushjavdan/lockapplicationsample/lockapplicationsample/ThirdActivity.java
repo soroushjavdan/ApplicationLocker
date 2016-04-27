@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
- * Created by TNP on 4/25/2016.
+ * Created by SoroushJavdan on 4/25/2016.
  */
 public class ThirdActivity extends Activity {
     @Override

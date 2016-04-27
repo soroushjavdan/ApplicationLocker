@@ -2,7 +2,6 @@ package net.soroushjavdan.lockapplicationsample.applicationlockerlibrary;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
@@ -14,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 /**
- * Created by TNP on 4/25/2016.
+ * Created by SoroushJavdan on 4/25/2016.
  */
 public class DefaultLockerActivity extends BaseLockerActivity {
 

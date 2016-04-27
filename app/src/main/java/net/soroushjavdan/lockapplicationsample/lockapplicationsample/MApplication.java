@@ -5,7 +5,7 @@ import android.app.Application;
 import net.soroushjavdan.lockapplicationsample.applicationlockerlibrary.MyLifecycleHandler;
 
 /**
- * Created by TNP on 4/25/2016.
+ * Created by SoroushJavdan on 4/25/2016.
  */
 public class MApplication extends Application {
 
@@ -14,6 +14,7 @@ public class MApplication extends Application {
         super.onCreate();
 
         registerActivityLifecycleCallbacks(new MyLifecycleHandler("1234"));
+
     }
 
 }

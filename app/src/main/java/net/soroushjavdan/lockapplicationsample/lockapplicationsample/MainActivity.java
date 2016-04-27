@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * Created by SoroushJavdan on 4/25/2016.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override

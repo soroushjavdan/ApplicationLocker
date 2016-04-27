@@ -8,7 +8,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 /**
- * Created by Soroush on 1/25/2016.
+ * Created by SoroushJavdan on 1/25/2016.
  */
 public class MyLifecycleHandler implements Application.ActivityLifecycleCallbacks {
 
