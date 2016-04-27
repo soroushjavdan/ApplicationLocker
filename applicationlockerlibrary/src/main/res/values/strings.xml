@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ApplicationLockerLibrary</string>
+    <string name="lock_getting_pass_txt">Enter your passcode</string>
+    <string name="wrong_lock_getting_pass_txt">wrong passcode , please retry</string>
+    <string name="submit_txt">unlock</string>
+</resources>

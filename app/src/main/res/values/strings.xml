@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LockApplicationSample</string>
+    <string name="action_settings">Settings</string>
+</resources>
