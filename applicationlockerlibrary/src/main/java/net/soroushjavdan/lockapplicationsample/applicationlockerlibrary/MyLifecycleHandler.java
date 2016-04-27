@@ -15,20 +15,19 @@ public class MyLifecycleHandler implements Application.ActivityLifecycleCallback
     private static final String PREF = "LockerPref";
     private static final String IS_APP_LEAVED = "isAppLeaved";
 
-    private Class lockActivity ;
+    private Intent lockActivityIntent = null ;
     private String password ;
     private String enterPassCodeTitle ;
     private String wrongPassCodeText ;
     private String submitButtonText;
 
     // to using custom passcode activity
-    public MyLifecycleHandler (Class passcodeActivity) {
-        lockActivity = passcodeActivity ;
+    public MyLifecycleHandler (Intent lockActivityIntent) {
+        this.lockActivityIntent = lockActivityIntent ;
     }
 
     public MyLifecycleHandler(String password){
         this.password = password ;
-        lockActivity =  DefaultLockerActivity.class;
     }
 
     public MyLifecycleHandler (String password , String enterPassCodeTitle , String wrongPassCodeText , String submitButtonText ) {
@@ -36,7 +35,6 @@ public class MyLifecycleHandler implements Application.ActivityLifecycleCallback
         this.enterPassCodeTitle = enterPassCodeTitle ;
         this.wrongPassCodeText = wrongPassCodeText ;
         this.submitButtonText= submitButtonText;
-        lockActivity = DefaultLockerActivity.class ;
     }
 
 
@@ -72,14 +70,17 @@ public class MyLifecycleHandler implements Application.ActivityLifecycleCallback
             editor.putBoolean(IS_APP_LEAVED, false);
             editor.commit();
             // send user to passcode activity to get password
-            Intent intent = new Intent(activity , DefaultLockerActivity.class );
-            if(lockActivity == DefaultLockerActivity.class){
+            Intent intent ;
+            if(lockActivityIntent == null ){
+                intent = new Intent(activity , DefaultLockerActivity.class );
                 intent.putExtra(DefaultLockerActivity.PASSWORD_EXTRA , password ) ;
                 if(enterPassCodeTitle != null){
                     intent.putExtra(DefaultLockerActivity.FAIL_PASS_TITLE_EXTRA , wrongPassCodeText ) ;
                     intent.putExtra(DefaultLockerActivity.PASS_TITLE_EXTRA , enterPassCodeTitle ) ;
                     intent.putExtra(DefaultLockerActivity.SUBMIT_BTN_TEXT , submitButtonText ) ;
                 }
+            }else{
+                intent = lockActivityIntent ;
             }
             activity.startActivity(intent);
         }
