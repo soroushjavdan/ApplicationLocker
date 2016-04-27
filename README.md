@@ -4,7 +4,7 @@ ApplicationLocker
 
 Android library that let you easily set lock activity for you application .
 
-![Sample][1]
+[![ScreenShot](https://raw.githubusercontent.com/soroushjavdan/ApplicationLocker/master/sample.gif)]
 
 
 Description
@@ -15,10 +15,10 @@ This library send your user to lock activity after they clicking on recent or ho
 How to:
 -------
 
-Add application class to your aplication like below and add this code ```java 
+Create application class and set it to your AndroidManifest and add this part of code to its onCreate method.
+```java 
  registerActivityLifecycleCallbacks(new MyLifecycleHandler("1234"));
-``` to it .
-
+``` 
 > Using default activity 
 
 just send user password to constructor
@@ -31,6 +31,7 @@ registerActivityLifecycleCallbacks(new MyLifecycleHandler("1234","please insert 
 ```
 
 > Using your activity as lock page
+
 ```java
 Intent intent = new (this , CustomLockerActivity.class);
 intent.putExtra("passcode","pass");
@@ -40,7 +41,8 @@ intent.putExtra("passcode","pass");
 registerActivityLifecycleCallbacks(intent)
 ```
 Note : when you want to using your custom Locker class your class need to extend BaseLockerActivity .
-or you could add this part of code to your class ```java 
+or you could just add this part of code to your class 
+```java 
     @Override
     public void onBackPressed() {
         moveTaskToBack(true);
@@ -65,8 +67,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
-
-
-
-[1]: ./sample.gif
