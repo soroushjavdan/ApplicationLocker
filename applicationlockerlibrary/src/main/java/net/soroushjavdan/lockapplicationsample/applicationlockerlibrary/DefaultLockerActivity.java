@@ -16,7 +16,7 @@ import android.widget.TextView;
 /**
  * Created by TNP on 4/25/2016.
  */
-public class DefaultLockerActivity extends AppCompatActivity {
+public class DefaultLockerActivity extends BaseLockerActivity {
 
     private String password ;
 
@@ -102,8 +102,5 @@ public class DefaultLockerActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        moveTaskToBack(true);
-    }
+
 }
