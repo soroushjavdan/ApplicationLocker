@@ -1,6 +1,7 @@
 ApplicationLocker
 ===================
 [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0) [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ApplicationLocker-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3535)
 
 Android library that let you easily set lock activity for you application .
 
