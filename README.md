@@ -50,6 +50,26 @@ or you could just add this part of code to your class
     }
 ```
 
+## Gradle
+  **Step 1 :**
+  Select your build system: Gradle 
+  
+  **Step 2 :**
+  Add the specific repository to your build file:
+  ```
+  repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+  }
+  ```
+  **step 3 :**
+  Add the dependency in your build file :
+   ```
+  dependencies {
+    compile 'com.github.soroushjavdan:ApplicationLocker:62301ce0b4'
+  }
+  ```
 
 ## License
 
