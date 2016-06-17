@@ -37,6 +37,10 @@ public class MyLifecycleHandler implements Application.ActivityLifecycleCallback
         this.submitButtonText= submitButtonText;
     }
 
+    public void changePassword(String s)
+    {
+        this.password=s;
+    }
 
     @Override
     public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
